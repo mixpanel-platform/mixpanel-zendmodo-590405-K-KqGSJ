@@ -50,7 +50,7 @@
     <script>
       MP.api.MAX_SIMULTANEOUS_QUERIES = 30
       var datesSelector = $('#dateSelect').MPDatepicker();
-      var rootEventSelect = '$custom_event:128307'; //$('#eventSelect').MPEventSelect(); //AK EDIT
+      var rootEventSelect = '$custom_event:128307';$('#eventSelect').MPEventSelect(); //AK EDIT
       /* Global Event List */
       var rootEvent;
       var objs = {};
@@ -212,7 +212,7 @@
         $('#run').show();
       })
       $('#run').on('click', function(e){
-        var rootEvent = rootEventSelect.MPEventSelect('value')
+        var rootEvent = '$custom_event:128307'  //rootEventSelect.MPEventSelect('value') //AKEDIT
         var dates = datesSelector.MPDatepicker('value')
         
         params.from = dates.from;
