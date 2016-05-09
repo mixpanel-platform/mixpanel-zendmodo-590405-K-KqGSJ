@@ -212,7 +212,12 @@
         $('#run').show();
       })
       $('#run').on('click', function(e){
-        var rootEvent = '$custom_event:128307' //rootEventSelect.MPEventSelect('value')
+        //hardcoding custom event
+        var rootEvent = '$custom_event:128307' 
+        
+        //rootEventSelect.MPEventSelect('value') 
+        //AK bring this line ^^^^^^ in to restore functionality
+        
         var dates = datesSelector.MPDatepicker('value')
         
         params.from = dates.from;
